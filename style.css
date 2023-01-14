@@ -25,7 +25,25 @@ body {
   top: 0;
 }
 
-#navBar .container {
+.container {
+  width: 100%;
+  overflow: hidden;
+  color: #000;
+  background-color: transparent;
+  letter-spacing: 4px;
+  padding: 12px 0px 12px 35px;
+  /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
+  float: left;
+  border: none;
+  transition-duration: 0.3s;
+}
+/*
+  background-color: transparent;
+  border: none;
+  transition-duration: 0.5s;
+
+
+  #navBar .container {
   width: 100%;
   overflow: hidden;
   color: #000;
@@ -35,22 +53,39 @@ body {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   float: left;
 }
-
+*/
+#normalNav {
+  width: 100%;
+  overflow: hidden;
+  color: #000;
+  background-color: #fff;
+  letter-spacing: 4px;
+  padding: 12px 0px 12px 35px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  float: left;
+}
 #navBar .container div {
   float: right;
+  margin-right: 30px;
 }
 #navBar #logoName img {
   width: 300px;
-  height: 30px;
-  padding: 0px;
+  height: 37px;
+  padding: 2px 10px;
+  width: auto;
   display: inline-block;
+  position: absolute;
+  top: 58px;
+}
+#navBar #logoName img:hover {
+  background-color: transparent !important;
 }
 .logo-img {
   width: 100px !important;
   height: 80px !important;
 }
 #links {
-  margin-top: 1.5%;
+  margin-top: 32px;
   display: inline-block;
 }
 .navBarItem {
@@ -60,7 +95,6 @@ body {
   text-align: center;
   border: none;
   display: inline-block;
-  padding: 8px 16px;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
@@ -69,7 +103,7 @@ body {
   font-size: 1.2rem;
 }
 
-#navBar .container .icon {
+/* #navBar .container .icon {
   float: right !important;
   display: none;
   margin-top: 2%;
@@ -77,11 +111,25 @@ body {
   margin-right: 0% !important;
   font-size: 2rem;
 }
+#navBar .container .icon:hover {
+  background-color: none !important;
+} */
+#menu-icon {
+  float: right !important;
+  display: none;
+  margin-top: 33px;
+  padding-right: 0% !important;
+  margin-right: 0% !important;
+  font-size: 2rem;
+}
+#menu-icon:hover {
+  background-color: transparent !important;
+}
 @media screen and (min-width: 1160px) {
   #navBar .container {
     float: left;
   }
-  #navBar .container .icon {
+  #menu-icon {
     display: none;
   }
   #navBar .container div {
@@ -90,7 +138,7 @@ body {
 
   #links {
     display: inline-block !important;
-    margin-top: 1.5%;
+    margin-top: 32px;
   }
   #links .navBarItem {
     display: inline-block;
@@ -113,12 +161,12 @@ body {
   #navBar .container {
     float: none;
   }
-  #navBar .container .icon {
+  #menu-icon {
     float: right !important;
     width: 100px;
     height: 80px;
     display: block !important;
-    margin-top: 20px !important;
+    margin-top: 33px !important;
   }
   #navBar .container div {
     float: none;
@@ -130,7 +178,8 @@ body {
 
   #links {
     display: none;
-    margin-top: 0%;
+    margin-top: 2%;
+    padding-right: 2%;
   }
   #links .navBarItem {
     display: block;
@@ -138,14 +187,15 @@ body {
   }
 
   .logo-img {
-    width: 100px !important;
-    height: 80px !important;
+    width: 100px;
+    height: 80px;
   }
 }
 
 .navBarItem:hover {
-  /* color: #000 !important;
-  background-color: #ccc !important; */
+  color: #755441;
+  background-color: #fefefe;
+  border-radius: 17%;
   font-weight: bolder;
 }
 #header {
@@ -155,7 +205,7 @@ body {
   max-width: 100%;
   position: relative;
   margin: auto;
-  margin-top: 7rem;
+  /* margin-top: 7rem; */
 }
 .slider img {
   width: 960px;
