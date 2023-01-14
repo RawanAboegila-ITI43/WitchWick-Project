@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="app.js" defer></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://css.gg/instagram.css' rel='stylesheet'>
     <link href='https://css.gg/facebook.css' rel='stylesheet'>
 
@@ -16,13 +17,20 @@
 <body>
     <nav id="navBar">
         <div class="container">
-            <a href="#home" class="navBarItem">Witch Wick</a>
-            <div>
+            <icon><img src="images/logo.png" class="logo-img"></icon>
+            <a href="#home" id="logo" class="navBarItem"><img src="images/blackName.png"></a>
+
+            <a href="javascript:void(0);" class="icon navBarItem" onclick="menuBar()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div id="links">
                 <a href="#about" class="navBarItem">About</a>
                 <a href="#contact" class="navBarItem">Contact Us</a>
                 <a href="#products" class="navBarItem">Products</a>
                 <a href="#Users" class="navBarItem">Users</a>
             </div>
+
+
         </div>
 
     </nav>
