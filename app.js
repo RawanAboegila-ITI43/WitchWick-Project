@@ -13,3 +13,14 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 2 seconds
     return slides;
 }
+
+function menuBar() {
+    var x = document.getElementById("links");
+    if (x.style.display === "block") {
+        console.log("none");
+        x.style.display = "none";
+    } else {
+        console.log("block");
+        x.style.display = "block";
+    }
+}
