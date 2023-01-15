@@ -102,7 +102,24 @@ body {
   cursor: pointer;
   font-size: 1.2rem;
 }
-
+.navBarItem:hover {
+  color: #755441;
+  background-color: #fefefe;
+  border-radius: 17%;
+  font-weight: bolder;
+}
+#loginLink {
+  color: #755441;
+  background-color: #fefefe;
+  border-radius: 17%;
+  font-weight: bolder;
+}
+#normalNav #loginLink {
+  color: #fefefe;
+  background-color: #755441;
+  border-radius: 17%;
+  font-weight: bolder;
+}
 /* #navBar .container .icon {
   float: right !important;
   display: none;
@@ -192,12 +209,6 @@ body {
   }
 }
 
-.navBarItem:hover {
-  color: #755441;
-  background-color: #fefefe;
-  border-radius: 17%;
-  font-weight: bolder;
-}
 #header {
   margin: 0% 0% 0% 0%;
 }
@@ -313,9 +324,15 @@ body {
 #footer {
   background-color: #755441 !important;
   color: #fefefe !important;
-  padding-top: 40px !important;
-  padding-bottom: 10px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
   font-size: large;
+  position: fixed;
+  /* left: 0; */
+  bottom: 0;
+  width: 100%;
+  height: 7rem;
+  /* display: block; */
 }
 #footer div {
   margin: 1% 0% 1% 1%;
@@ -325,4 +342,70 @@ body {
   margin: 0% 1% 0% 1%;
   top: 0.5%;
   font-size: x-large;
+}
+
+/* Login Form */
+
+.login-page {
+  width: 500px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  background: #ffffff;
+  max-width: 500px;
+  margin: 20% auto 20%;
+  padding: 10%;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 5%;
+  padding: 5%;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+.form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #755441;
+  width: 100%;
+  border: 0;
+  padding: 5%;
+  color: #fefefe;
+  font-size: 1.4rem;
+  font-family: "Merienda";
+  /* -webkit-transition: all 0.3 ease; */
+  /* transition: all 0.3 ease; */
+  cursor: pointer;
+  font-weight: 600;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  color: #f1ddcc;
+}
+.form .message {
+  margin: 15% 0 0;
+  color: #bd9e84;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.form .message a {
+  color: #4a756e;
+  text-decoration: none;
+  font-weight: 500;
+}
+.form .message a:hover {
+  color: #41655f;
+  /* text-decoration: underline; */
+  font-weight: bolder;
+}
+.form .register-form {
+  display: none;
 }
