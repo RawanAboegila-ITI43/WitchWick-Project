@@ -344,9 +344,9 @@ body {
   font-size: x-large;
 }
 
-/* Login Form */
+/* Login , Register , Contact Form */
 
-.login-page {
+.form-page {
   width: 500px;
   padding: 8% 0 0;
   margin: auto;
@@ -359,7 +359,8 @@ body {
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-.form input {
+.form input,
+.form textarea {
   font-family: sans-serif;
   outline: 0;
   background: #f2f2f2;
@@ -408,4 +409,77 @@ body {
 }
 .form .register-form {
   display: none;
+}
+
+/* Price List */
+
+.tableContainer th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color: #e3bfb7;
+}
+
+.tableContainer td {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.tableContainer {
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 10% auto;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.tableContainer td,
+.tableContainer th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+/* Background-color of the odd rows */
+.tableContainer tr:nth-child(odd) {
+  background-color: #c2968d;
+}
+
+/* Background-color of the even rows */
+.tableContainer tr:nth-child(even) {
+  background-color: #e3bfb7;
+}
+
+.tableContainer th {
+  background-color: #755441;
+}
+
+.tableContainer td:first-child {
+  color: #e3bfb7;
+  background-color: #4a756e;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.tableContainer td:first-child:hover {
+  color: #e3bfb7 !important;
+  background-color: #4a756e !important;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.tableContainer tr:hover {
+  background-color: #755441;
+}
+
+.tableContainer td:hover {
+  background-color: #e1c1a7;
+  color: #403e10;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .tableContainer {
+    margin: 30% auto;
+  }
 }
