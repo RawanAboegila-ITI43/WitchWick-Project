@@ -1,0 +1,8 @@
+Color Pallete:
+
+["#E3BFB7", "#4a756e", "#755441", "#e1c1a7", "#fefefe"]
+
+Fonts:
+
+Herculanum
+Hertical serif
